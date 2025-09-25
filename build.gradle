@@ -10,6 +10,22 @@ repositories {
     mavenCentral()
 }
 
+def allureVersion = "2.21.0"
+
+allure {
+    report {
+        version.set(allureVersion)
+    }
+    adapter {
+        aspectjWeaver.set(true)
+        frameworks {
+            junit5 {
+                adapterVersion.set(allureVersion)
+            }
+        }
+    }
+}
+
 compileTestJava {
     options.encoding = 'UTF-8'
 }
