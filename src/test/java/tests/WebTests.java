@@ -15,7 +15,7 @@ public class WebTests extends BaseTest {
     @DisplayName("Ссылка 'Личный кабинет' отображается на главной странице")
     @Tag("WEB")
     void personalAccountButtonIsDisplayed() {
-        open("");
+        open("https://www.petrolplus.ru/");
         $(".account-menu-head").shouldBe(visible);
     }
 
@@ -23,7 +23,7 @@ public class WebTests extends BaseTest {
     @DisplayName("При нажатии ссылку 'Личный кабинет' переход на страницу ЛК")
     @Tag("WEB")
     void byClickOnPersonalAccountButtonWillTakenToPersonalAccountPage() {
-        open("");
+        open("https://www.petrolplus.ru/");
         $(".account-menu-head").click();
         switchTo().window(1);
         $("#username").shouldBe(visible);
