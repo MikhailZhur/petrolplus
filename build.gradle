@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '3.0.0'
+}
+
+group = 'ru.mzhuravlev'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation('org.junit.jupiter:junit-jupiter',
+                        'com.codeborne:selenide:7.10.1',
+                        'io.qameta.allure:allure-selenide:2.29.1',
+                        'org.slf4j:slf4j-simple:2.0.17')
+}
+
+test {
+    useJUnitPlatform()
+}
