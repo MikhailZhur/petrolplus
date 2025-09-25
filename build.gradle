@@ -19,6 +19,7 @@ dependencies {
     testImplementation('org.junit.jupiter:junit-jupiter',
                         'com.codeborne:selenide:7.10.1',
                         'io.qameta.allure:allure-selenide:2.29.1',
+                        'io.qameta.allure:allure-junit5:2.30.0',
                         'org.slf4j:slf4j-simple:2.0.17')
 }
 
