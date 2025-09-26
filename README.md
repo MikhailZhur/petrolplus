@@ -2,5 +2,6 @@
 
 > Передовые Платежные Решения — Финтех оператор сервисов для бизнеса в России.
 >
+> Сборка в дженкинсе
 > <img width="1874" height="839" alt="image" src="https://github.com/user-attachments/assets/e49ce2b8-8007-4af6-9fb4-145ce9d794cb" />
 
