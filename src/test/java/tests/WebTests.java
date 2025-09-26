@@ -42,7 +42,7 @@ public class WebTests extends BaseTest {
     }
 
     @Test
-    @DisplayName("Главные кнопки(dropdown) отображаются на главной странице сайта")
+    @DisplayName("При вводе email в поле для получения рассылки отображается подсказка 'В формате pochta@mail.ru' ")
     @Tag("WEB")
     void hintIsDisplayedWhenEnteringAnEmail() {
         open("");
