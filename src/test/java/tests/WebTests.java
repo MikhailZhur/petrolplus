@@ -16,9 +16,7 @@ public class WebTests extends BaseTest {
     @DisplayName("Ссылка 'Личный кабинет' отображается на главной странице")
     @Tag("WEB")
     void personalAccountButtonIsDisplayed() {
-        step("Open petrolplus.ru", () -> {
-            open("https://www.petrolplus.ru/");
-        });
+        step("Open petrolplus.ru", () -> open("https://www.petrolplus.ru/"));
 
         step("Check", () -> {
             $(".account-menu-head").shouldBe(visible);
