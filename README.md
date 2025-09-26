@@ -23,3 +23,10 @@
 > Сборка в Jenkins
 > <img width="1874" height="839" alt="image" src="https://github.com/user-attachments/assets/e49ce2b8-8007-4af6-9fb4-145ce9d794cb" />
 
+Allure отчет
+<img width="1896" height="857" alt="image" src="https://github.com/user-attachments/assets/48adc611-cee2-4932-82ec-29a571afecef" />
+
+<img width="1905" height="842" alt="image" src="https://github.com/user-attachments/assets/affacf6e-6e48-416b-b7a6-fe988e4b79bf" />
+
+
+
