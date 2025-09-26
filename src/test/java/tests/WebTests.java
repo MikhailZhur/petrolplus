@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverConditions.url;
+import static io.qameta.allure.Allure.step;
 
 public class WebTests extends BaseTest {
 
@@ -15,8 +16,13 @@ public class WebTests extends BaseTest {
     @DisplayName("Ссылка 'Личный кабинет' отображается на главной странице")
     @Tag("WEB")
     void personalAccountButtonIsDisplayed() {
-        open("https://www.petrolplus.ru/");
-        $(".account-menu-head").shouldBe(visible);
+        step("Open petrolplus.ru", () -> {
+            open("https://www.petrolplus.ru/");
+        });
+
+        step("Check", () -> {
+            $(".account-menu-head").shouldBe(visible);
+        });
     }
 
     @Test
